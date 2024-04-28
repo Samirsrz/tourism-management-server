@@ -75,7 +75,7 @@ async function run() {
 
 
      app.get('/myList/:email', async(req,res) => {
-        const reqEmail = req.params.email
+        const reqEmail = req.params.email;
        console.log(reqEmail);
        const query = {email :reqEmail };
        const result  = await spotCollection.find(query).toArray();
