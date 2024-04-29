@@ -153,14 +153,6 @@ run().catch(console.dir);
 
 
 
-
-
-
-
-
-
-
-
 app.get('/', (req,res) => {
     res.send('Tourism management is running');
 })
