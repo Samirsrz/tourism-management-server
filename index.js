@@ -40,7 +40,7 @@ async function run() {
 
 
 
-
+//country get er kaaj
      app.get('/countryAll', async(req, res)=> {
         const cursor = countryCollection.find();
         const result = await cursor.toArray();
@@ -57,6 +57,7 @@ async function run() {
         console.log(result)
       })
 
+//get er kaaaj
 
      app.get('/addSpot', async(req, res)=> {
         const cursor = spotCollection.find();
